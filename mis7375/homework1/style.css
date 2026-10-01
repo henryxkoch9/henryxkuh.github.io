@@ -1,0 +1,259 @@
+  /* 
+ Name: Henry Koch
+ File: style.css
+ Date Created: 2026-09-30
+ Date Updated: 2026-09-30
+ Purpose: Style sheet for MIS 7375 HW1
+ */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(180deg, #dff3ff 0%, #dfeef7 35%, #f3f8fc 100%);
+    font-family: "Source Sans Pro", sans-serif;
+    color: #1d2d3d;
+}
+
+h1 {
+    text-align: right;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: normal;
+    color: brown;
+}
+
+#header {
+    background: rgba(255, 255, 255, 0.75);
+    border-bottom: 2px solid #c3d9ea;
+    padding: 18px 30px;
+}
+
+#header table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#header td {
+    vertical-align: middle;
+    color: #1a3d5c;
+    font-weight: 700;
+}
+
+#header td:nth-child(2) {
+    font-size: 2.1rem;
+    letter-spacing: 0.02em;
+}
+
+#logo {
+    max-width: 120px;
+    height: auto;
+}
+
+#body {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+form {
+    width: 100%;
+}
+
+table.form {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.85);
+    border-collapse: separate;
+    border-spacing: 0 12px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(20, 52, 77, 0.08);
+    overflow: hidden;
+    opacity: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1d2d3d;
+}
+
+th.form {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    background: linear-gradient(135deg, #1b5d8c, #2c83b7);
+    padding: 18px 20px;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 12px 12px 0 0;
+}
+
+tr.form td,
+tr.form th,
+table.form td,
+table.form th {
+    padding: 10px 12px;
+}
+
+table.form td {
+    background: rgba(255, 255, 255, 0.7);
+    border-top: 1px solid #dfeaf3;
+    border-bottom: 1px solid #dfeaf3;
+    vertical-align: top;
+}
+
+table.form td:first-child {
+    width: 30%;
+    text-align: right;
+    font-weight: 700;
+    color: #163a59;
+    background: rgba(223, 239, 252, 0.8);
+    border-left: 1px solid #dfeaf3;
+    border-radius: 12px 0 0 12px;
+    padding-right: 20px;
+}
+
+table.form td:last-child {
+    border-right: 1px solid #dfeaf3;
+    border-radius: 0 12px 12px 0;
+}
+
+label {
+    font-weight: 600;
+    color: #1d2d3d;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="password"],
+select {
+    border: 1px solid #bdd1e1;
+    border-radius: 8px;
+    padding: 8px 10px;
+    font-size: 0.98rem;
+    background: #ffffff;
+    color: #1b2f3d;
+    margin: 4px 6px 4px 0;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+input[type="password"]:focus,
+select:focus {
+    outline: 2px solid rgba(30, 119, 176, 0.2);
+    border-color: #3d89b5;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: #2b7db0;
+    transform: translateY(1px);
+    margin-right: 6px;
+}
+
+fieldset {
+    border: 1px solid #bfd3e2;
+    border-radius: 10px;
+    background: #f7fbff;
+    padding: 10px 12px;
+    margin: 0;
+}
+
+fieldset label {
+    display: inline-block;
+    margin: 5px 12px 5px 0;
+    font-weight: 500;
+}
+
+.range-field {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+input[type="range"] {
+    width: 180px;
+    accent-color: #1d6ea8;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background: linear-gradient(135deg, #1d6ea8, #2d8cc6);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 22px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    box-shadow: 0 6px 12px rgba(29, 110, 168, 0.2);
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 14px rgba(29, 110, 168, 0.25);
+}
+
+.site-footer {
+    background: #1d3344;
+    color: #e9f5ff;
+    margin-top: 30px;
+    padding: 20px 0;
+}
+
+.footer-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-brand {
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.contact-link {
+    color: #dfefff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+
+.textsize1 {
+    width: 10px;
+}
+
+.textsize5 {
+    width: 40px;
+}
+
+@media (max-width: 700px) {
+    #body {
+        padding: 0 12px;
+    }
+
+    table.form td:first-child,
+    table.form td:last-child {
+        display: block;
+        width: 100%;
+        text-align: left;
+        border-radius: 12px;
+    }
+
+    table.form td {
+        border-radius: 12px;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
